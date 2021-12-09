@@ -1,2 +1,9 @@
-<p>Output</p>
+<h1>Output</h1>
 
+{{ blogs }}
+
+{% for blog in blogs %}
+    <h4>{{ blog.name }}</h4>
+    <p>{{ blog.tagline }}</p>
+    <hr>
+{% endfor %}
